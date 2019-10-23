@@ -22,17 +22,17 @@
 		<div class="panelNavBar">
 			<img id="imgLogo" src="images/logoBoston.png">
 			<div id="lblCurrentPage"><p><b>Home</b></p></div>
-				<a name="btnManageUsers" id="btnManageUsers" class="btn" href=""><p>Manage Users</p></a>
+				<a name="btnManageLocations" id="btnManageLocations" class="btn" href="formManageLocations.php"><p>Manage Locations</p></a>
+				<a name="btnManageUsers" id="btnManageUsers" class="btn" href="adminManageUsers.php"><p>Manage Users</p></a>
+				<a name = "btnAssignSalesRep" id="btnAssignSalesRep" class="btn" href="formAssignSalesRep.php"><p>Assign Sales Rep</p></a>
 				<a name="btnReports" id="btnReports" class="btn" href=""><p>Reports</p></a>
-				<a id="-" class="btn" href=""><p>-</p></a>
-				<a id="-" class="btn" href=""><p>-</p></a>
 				<a id="btnLogout" class="btn" href="logout.php"><p>Log Out</p></a>
 		</div>
 		<!--HEADER PANEL-->
         <div class="panelHeader">
 			<div id="lblWelcomeMessage">
 			<p>Support Admin Dashboard</p>
-			<p>You are logged in as -Name- -Surname-</p>
+                <?php echo "<p>You are logged in as -" .$_SESSION['firstname'] ."- -" .$_SESSION['surname'] ."-</p>" ?>
 			</div>
 		</div>
 		<!--MAIN PANEL-->
@@ -43,7 +43,7 @@
 					<option value="Bar Manager">Bar Manager</option>
 					<option value="Hardware Admin">Hardware Admin</option>
 					<option value="Support Admin">Support Admin</option>
-				</select> 
+				</select>
 				<table class="tblUsers" name ="tblUsers">
 				<tr>
 					<td>
