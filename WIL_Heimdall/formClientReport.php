@@ -1,4 +1,3 @@
-<?php include "config.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,9 +47,9 @@
 				<tr>
 					<td>
 						<!--CONTENT OF TABLE-->
-						<div id="divTableClientsContent" style="width:100%; height:400px; overflow:auto;">
+						<div id="divTableClientsContent" style="width:100%; height:490px; overflow:auto;">
 							<table name="tblClientsContent" id = "tblClientsContent" class="tblClients">
-								<!--<tr>
+							<!--<tr>
 									<td>Venue</td>
 									<td>Location</td>
 									<td><input type="checkbox" name="" value="true"></td>
@@ -112,6 +111,10 @@
 				<input type="text" id="txtBoxVenue" name="txtBoxVenue" value="" placeholder="Venue"/>
 				<label><h5>Location:</h5></label>
 				<input type="text" id="txtBoxLocation" name="txtBoxLocation" value="" placeholder="Location"/>
+				<label><h5>Arduino:</h5></label>
+				<select name="ddlArduino" id="ddlArduino">
+				<option value="867858033068951">867858033068951</option>
+				</select>
 				<label><h5>Date Range:</h5></label>
 				<input name="dateStart" type="date" id="inputMDEx" class="form-control">
 				<label><h5>To</h5></label>
